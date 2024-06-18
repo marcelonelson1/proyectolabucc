@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema Auto</title>
+    <script src="./codigo.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+    <div class="div2">
+      <h1 class="h1e">PRECIO DE COMPONENTES</h1>
+
+      <form>
+        <p>
+          MARCA SOLICITADA :
+          <select name="carrera" id="marca">
+            <option value="1">HYPERX</option>
+            <option value="2">REDDRAGON</option>
+            <option value="3">LOGITECH</option>
+          </select>
+        </p>
+
+        <p>
+          PERIFERICOS :
+          <select name="modelo" id="modelo">
+            <option value="1">TECLADO</option>
+            <option value="2">RATON</option>
+            <option value="3">AURICULARES</option>
+          </select>
+
+          NUMERO DE VECES QUE A COMPRADO:
+          <P></P>
+          <input type="number" name="n1" id="n1" placeholder="INDIQUE CUANTAS VECES A COPMPRADO AQUI" />
+        </p>
+
+        <p>
+          NUMERO DE PRODUCTOS QUE DESEA LLEVAR:
+          <P></P>
+          <input type="number" name="n2" id="n2" placeholder="indique la cantidad de productos que se lleva" />
+        </p>
+
+        <p>
+          OPERACION :
+          <select name="operar" id="opera">
+            <option value="1">NARANJA 20%</option>
+            <option value="2">BBVA 15%</option>
+            <option value="3">MASTERCARD BANCARIZADA 5%</option>
+            <option value="4">MERCADO PAGO</option>
+          </select>
+        </p>
+      </form>
+
+      <button onclick="precio()">MOSTRAR PRECIO</button>
+      <button onclick="calcular()">CALCULAR</button>
+
+      <p id="valor1"></p>
+      <p id="resultado2"></p>
+    </div>
+    <div class="div2">
+      <h1>DATOS DE ENTREGA</h1>
+
+      <form>
+        <p>
+          Nombre y apellido
+          <input
+            type="text0"
+            name="nombre y apellido"
+            id="nombre y apellido"
+            placeholder="indique su nombre"
+          />
+        </p>
+        <p>
+          DIRECCION
+          <input
+            type="text"
+            name="DIRECCION"
+            id="DIRECCION"
+            placeholder="indique su direccion"
+          />
+        </p>
+        <p>
+          DNI
+          <input
+            type="number"
+            name="dni"
+            id="dni"
+            placeholder="indica tu DNI"
+          />
+        </p>
+        <p>
+          fecha de nacimiento
+          <input
+            type="date"
+            name="date"
+            id="date"
+          />
+        </p>
+        <p>
+          Pago
+          <p></p>
+          Deposito o Transferencia<input type="radio" name="forma de pago" value="deposito o Transferencia" /> 
+<p></p>
+          Tarjetas de crédito ¡Hasta 12 cuotas!
+          <input type="radio" name="forma de pago" value="femenino" />
+        </p>
+      </form>
+
+      <button onclick="ENVIAR()">ENVIAR</button>
+      <p id="resultado"></p>
+    </div>
+  </body>
+</html>
